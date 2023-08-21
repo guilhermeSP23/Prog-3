@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Exercício 06</title>
+        <link href="estilo.css" rel="stylesheet" type="text/css">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Fatura de Serviços de Telecomunicações</h1>
+        <hr>
+            <form action="Processamento" method="post">
+                
+        <fieldset>
+            
+            <legend>Dados do Cliente:</legend>
+            
+            <label for="cpf">CPF do Cliente:</label><br>
+            <input type="text" name="cpf" id="cpf" size="10"><br><br>
+
+            <label for="nome">Nome do Cliente:</label><br>
+            <input type="text" name="nome" id="nome" size="30"><br><br>
+            
+            <label for="nome">Telefone:</label><br>
+            <input type="text" name="telefone" id="telefone" size="20"><br><br>
+            
+            <label for="Nome_do_Cliente">Endereço:</label><br>
+            <textarea name="endereco" id="Nome_do_Cliente" cols="40" rows="3"></textarea> <br>
+            
+        </fieldset>
+        
+        <fieldset>
+            
+            <legend>Dados do Serviço:</legend>
+            
+             <label for="Nome_do_Cliente">Descrição:</label><br>
+            <textarea name="descricao" id="descricao" cols="40" rows="3"></textarea> <br><br>
+            
+            <label for="nascimentoCliente">Data da Realização:</label><br>
+                <input type="date" name="dataServico" id="dataServico" ></input><br><br>
+                
+                <label for="tipo">Tipo:</label><br>
+            <select name="tipo" id="tipo">
+                <option value="">Selecione um Serviço</option>
+                <option value="1">Instalação de Telefone/Internet</option>
+                <option value="2">Manutenção de Linha Telefônica/Internet</option>
+                <option value="3">Troca de Equipamentos (modem)</option>
+                <option value="4">Suporte Técnico</option>
+            </select><br><br>
+            
+             <label for="tRealizacao">Tempo para Realização (em horas):</label><br>
+            <input type="text" name="tRealizacao" id="tRealizacao" size="10"><br><br>
+            
+            
+             <label for="vServico">Valor Unitário:</label><br>
+            <input type="text" name="vServico" id="vServico" size="10"><br>
+            </fieldset>
+        <fieldset>
+            
+             <legend>Dados da Fatura:</legend>
+            
+            <label for="nascimentoCliente">Data da Emissão:</label><br>
+                <input type="date" name="emissao" id="emissao" ></input><br><br>
+                
+            <label for="nascimentoCliente">Data de Vencimento:</label><br>
+                <input type="date" name="vencimento" id="vencimento" ></input><br>
+            
+            
+            
+            </fieldset>
+           <br>
+            <input type="submit" name="solicitar" value="Imprimir Fatura">
+            <input type="reset" name="limpar" value="Limpar">
+        </form>
+    </body>
+</html>

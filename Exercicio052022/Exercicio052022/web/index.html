@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Exercício 02</title>
+        <link href="estilos.css" rel="stylesheet" type="text/css">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Pedidos de Camisas</h1>
+        <hr>
+        <form action="Processamento" method="post">
+            <label for="cpf">CPF do Cliente:</label>
+            <input type="text" name="cpf" id="cpf" size="10"><br><br>
+
+            <label for="nome">Nome do Cliente:</label>
+            <input type="text" name="nome" id="nome" size="30"><br><br>
+
+            <label for="modelo">Modelo de Camisa:</label>
+            <select name="modelo" id="modelo">
+                <option value="">Selecione um Modelo</option>
+                <option value="C">Camiseta</option>
+                <option value="PC">Camisa Polo - Manga Curta</option>
+                <option value="PL">Camisa Polo - Manga Longa</option>
+                <option value="S">Camisa Social</option>
+            </select><br><br>
+
+            <fieldset>
+                <legend>Sexo:</legend>
+                <input type="radio" name="sexo" id="sexoF" value="F"><label for="sexoF">Feminino</label><br>
+                <input type="radio" name="sexo" id="sexoM" value="M"><label for="sexoM">Masculino</label><br>
+            </fieldset><br>
+
+            <fieldset>
+                <legend>Tamanho:</legend>
+                <input type="radio" name="tamanho" id="tamanhoP" value="P"><label for="tamanhoP">Pequena</label><br>
+                <input type="radio" name="tamanho" id="tamanhoM" value="M"><label for="tamanhoM">Média</label><br>
+                <input type="radio" name="tamanho" id="tamanhoG" value="G"><label for="tamanhoG">Grande</label><br>
+            </fieldset>
+
+            <label for="quantidade">Quantidade:</label>
+            <input type="text" name="quantidade" id="quantidade" size="10"><br><br>
+
+            <input type="submit" name="solicitar" value="Solicitar Pedido">
+            <input type="reset" name="limpar" value="Limpar">
+        </form>
+    </body>
+</html>
